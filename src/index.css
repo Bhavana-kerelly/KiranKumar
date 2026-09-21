@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-dark: #0B1E2D;
+  --color-navy-primary: #122C42;
+  --color-navy-medium: #1F3F59;
+  --color-slate-blue: #3B5872;
+  --color-slate-light: #6A87A0;
+
+  --color-gold-primary: #D4B583;
+  --color-gold-light: #EBDCBF;
+  --color-gold-dark: #A6854F;
+
+  --color-clinical-bg: #F4F7F9;
+  --color-clinical-surface: #FFFFFF;
+  --color-clinical-border: #E0E7EE;
+
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-grotesk: 'Inter Tight', 'Space Grotesk', sans-serif;
+  --font-display: 'Inter Tight', 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #F4F7F9;
+    color: #0B1E2D;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Fine Clinical Grid Pattern */
+.bg-grid-subtle {
+  background-size: 44px 44px;
+  background-image: 
+    linear-gradient(to right, rgba(18, 44, 66, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 44, 66, 0.025) 1px, transparent 1px);
+}
+
+/* Radial Glow Effects */
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 45%, rgba(212, 181, 131, 0.16) 0%, rgba(244, 247, 249, 0) 70%);
+}
+
+.bg-radial-navy {
+  background: radial-gradient(circle at 50% 50%, rgba(18, 44, 66, 0.04) 0%, rgba(244, 247, 249, 0) 75%);
+}
+
+/* Masked Letter Overflow Box for Individual Character Stagger */
+.letter-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.06em;
+  margin-bottom: -0.06em;
+}
+
+.letter-char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Glass Surface Treatments */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(18, 44, 66, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(18, 44, 66, 0.07);
+}
+
+.shadow-floating {
+  box-shadow: 0 20px 48px -10px rgba(11, 30, 45, 0.1), 0 4px 14px rgba(212, 181, 131, 0.08);
+}
+
+.shadow-subtle {
+  box-shadow: 0 4px 20px -2px rgba(18, 44, 66, 0.04);
+}
+
+.shadow-gold-glow {
+  box-shadow: 0 0 25px rgba(212, 181, 131, 0.25);
+}
+
+/* Scrollbar Hide */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
