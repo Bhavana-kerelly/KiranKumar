@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero';
 import { ExperienceSection } from './components/Experience/ExperienceSection';
+import { ClinicalAchievements } from './components/Achievements/ClinicalAchievements';
 import { ExpertiseSection } from './components/Expertise/ExpertiseSection';
 import { RoboticSurgerySection } from './components/Robotics/RoboticSurgerySection';
 import { PatientJourneySection } from './components/PatientJourney/PatientJourneySection';
@@ -19,6 +20,7 @@ function Home({ mousePosition, onOpenAppointment }) {
   return (
     <main className="w-full min-h-screen bg-[#F4F7F9] text-[#0B1E2D]">
       <Hero onOpenAppointment={onOpenAppointment} />
+      <ClinicalAchievements />
       <ExperienceSection mousePosition={mousePosition} />
       <ExpertiseSection mousePosition={mousePosition} />
       <RoboticSurgerySection mousePosition={mousePosition} />

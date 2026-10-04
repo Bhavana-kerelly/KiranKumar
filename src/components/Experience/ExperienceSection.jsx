@@ -75,13 +75,43 @@ const MILESTONES = [
     institution: "Medicover Hospitals",
     location: "Hitech City, Hyderabad, Telangana",
     coords: "17.4435° N, 78.3772° E",
-    mapPos: { top: "82%", left: "18%" },
-    coordsNum: { x: 18, y: 82 },
+    mapPos: { top: "60%", left: "30%" },
+    coordsNum: { x: 30, y: 60 },
     category: "ROBOTIC EXPERTISE",
     icon: Cpu,
     description: "Sub-specialty fellowship training in computer-assisted surgical navigation, 3D kinematic patient-specific planning, and robotic-assisted knee and hip arthroplasty.",
     tags: ["ROBOTIC SURGERY", "JOINT REPLACEMENT", "3D NAVIGATION"],
     bgImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    id: "05",
+    tag: "SUB-SPECIALTY FELLOWSHIP",
+    degree: "FELLOWSHIP IN PAIN MANAGEMENT",
+    institution: "Specialized Center",
+    location: "India",
+    coords: "0.0° N, 0.0° E",
+    mapPos: { top: "75%", left: "20%" },
+    coordsNum: { x: 20, y: 75 },
+    category: "PAIN MANAGEMENT",
+    icon: ShieldCheck,
+    description: "Advanced fellowship focusing on comprehensive pain management techniques and interventions.",
+    tags: ["PAIN MANAGEMENT", "FELLOWSHIP"],
+    bgImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    id: "06",
+    tag: "SUB-SPECIALTY FELLOWSHIP",
+    degree: "FELLOWSHIP IN LUMBAR SPINE",
+    institution: "Specialized Center",
+    location: "India",
+    coords: "0.0° N, 0.0° E",
+    mapPos: { top: "90%", left: "10%" },
+    coordsNum: { x: 10, y: 90 },
+    category: "SPINE SURGERY",
+    icon: ShieldCheck,
+    description: "Specialized fellowship focusing on the diagnosis and surgical treatment of lumbar spine disorders.",
+    tags: ["LUMBAR SPINE", "SPINE SURGERY"],
+    bgImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1200"
   }
 ];
 
@@ -281,14 +311,10 @@ export function ExperienceSection({ mousePosition = { x: 0, y: 0 } }) {
               <div className="text-xl font-grotesk font-black text-[#FBFAF7] tracking-tight uppercase">
                 DR. KIRAN KUMAR KARUMURU
               </div>
-              <div className="text-xs text-[#C9A45C] font-grotesk font-bold tracking-wider uppercase mt-0.5">
-                Specialist in Robotic Joint Replacement & Arthroscopy
-              </div>
 
-              {/* 500+ Surgeries Pill */}
+              {/* Qualifications Pill */}
               <div className="mt-3 inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#C9A45C]/15 border border-[#C9A45C]/40 text-[#E4D1A5] text-[11px] font-grotesk font-bold">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#C9A45C]" />
-                <span>500+ Knee Replacement Surgeries</span>
+                <span>Mbbs,MS ortho,FIJR,FIPM,FISS</span>
               </div>
             </div>
 
@@ -347,229 +373,60 @@ export function ExperienceSection({ mousePosition = { x: 0, y: 0 } }) {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-[#071B2A]/70 border border-[#C9A45C]/40 flex items-start gap-3.5 shadow-[0_0_20px_rgba(201,164,92,0.1)]">
-                  <div className="w-8 h-8 rounded-lg bg-[#C9A45C] text-[#071B2A] flex items-center justify-center font-bold text-xs shrink-0 font-mono">
+                <div className="p-4 rounded-2xl bg-[#071B2A]/70 border border-[#163B56]/60 flex items-start gap-3.5">
+                  <div className="w-8 h-8 rounded-lg bg-[#163B56] text-[#C9A45C] flex items-center justify-center font-bold text-xs shrink-0 font-mono">
                     04
                   </div>
                   <div>
-                    <span className="text-xs font-mono font-bold text-[#C9A45C] block">ROBOTIC SURGERY FELLOWSHIP</span>
+                    <span className="text-xs font-mono font-bold text-[#E4D1A5] block">ROBOTIC SURGERY FELLOWSHIP</span>
                     <span className="text-sm font-bold text-[#FBFAF7] block">Medicover Hospitals</span>
-                    <span className="text-xs text-[#E4D1A5]">Hitech City, Hyderabad, Telangana</span>
+                    <span className="text-xs text-[#456982]">Hitech City, Hyderabad, Telangana</span>
                   </div>
                 </div>
-              </div>
-
-              {/* Concise Editorial Quote */}
-              <div className="mt-6 pt-5 border-t border-[#163B56]/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-[#456982]">
-                <p className="font-normal italic leading-relaxed max-w-xl">
-                  "Each phase represents deliberate clinical progression — from fundamental surgical dissection at Andhra Medical College to high-volume robotic arthroplasty at Medicover Hitech City."
-                </p>
-                <span className="text-[10px] font-mono tracking-widest text-[#E4D1A5] uppercase shrink-0">
-                  AP ➔ TELANGANA CORRIDOR
-                </span>
-              </div>
-            </div>
-
-            {/* Bottom Interactive Milestone Inspector Quick-Card */}
-            <div className="bg-[#FBFAF7] text-[#071B2A] rounded-2xl p-5 sm:p-6 shadow-xl border border-[#E4D1A5]/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="px-2 py-0.5 rounded bg-[#071B2A] text-[#FBFAF7] text-[10px] font-mono font-bold">
-                    MILESTONE {activeMilestone.id} / 04
-                  </span>
-                  <span className="text-xs font-grotesk font-bold text-[#C9A45C] uppercase">
-                    {activeMilestone.category}
-                  </span>
+              <div className="p-4 rounded-2xl bg-[#071B2A]/70 border border-[#163B56]/60 flex items-start gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-[#163B56] text-[#C9A45C] flex items-center justify-center font-bold text-xs shrink-0 font-mono">
+                  05
                 </div>
-                <h4 className="text-lg font-grotesk font-extrabold text-[#071B2A] leading-tight">
-                  {activeMilestone.degree} — {activeMilestone.institution}
-                </h4>
-                <p className="text-xs text-[#456982] mt-0.5">
-                  {activeMilestone.description}
-                </p>
+                <div>
+                  <span className="text-xs font-mono font-bold text-[#E4D1A5] block uppercase">QUALIFICATION</span>
+                  <span className="text-sm font-bold text-[#FBFAF7] block">FIPM(kolkata)</span>
+                </div>
               </div>
 
-              <div className="flex items-center gap-2 self-end sm:self-center shrink-0">
-                {MILESTONES.map((m) => (
-                  <button
-                    key={m.id}
-                    onClick={() => setActiveId(m.id)}
-                    className={`w-8 h-8 rounded-full text-xs font-mono font-bold transition-all ${
-                      activeId === m.id
-                        ? "bg-[#071B2A] text-[#E4D1A5] scale-110 shadow-md ring-2 ring-[#C9A45C]"
-                        : "bg-[#071B2A]/10 text-[#071B2A] hover:bg-[#071B2A]/20"
-                    }`}
-                  >
-                    {m.id}
-                  </button>
-                ))}
+              <div className="p-4 rounded-2xl bg-[#071B2A]/70 border border-[#163B56]/60 flex items-start gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-[#163B56] text-[#C9A45C] flex items-center justify-center font-bold text-xs shrink-0 font-mono">
+                  06
+                </div>
+                <div>
+                  <span className="text-xs font-mono font-bold text-[#E4D1A5] block uppercase">QUALIFICATION</span>
+                  <span className="text-sm font-bold text-[#FBFAF7] block">FISS (Ganga hospital ,Coimbatore)</span>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-[#071B2A]/70 border border-[#163B56]/60 flex items-start gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-[#163B56] text-[#C9A45C] flex items-center justify-center font-bold text-xs shrink-0 font-mono">
+                  07
+                </div>
+                <div>
+                  <span className="text-xs font-mono font-bold text-[#E4D1A5] block uppercase">FELLOWSHIP</span>
+                  <span className="text-sm font-bold text-[#FBFAF7] block">Fellowship in pain management</span>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-[#071B2A]/70 border border-[#163B56]/60 flex items-start gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-[#163B56] text-[#C9A45C] flex items-center justify-center font-bold text-xs shrink-0 font-mono">
+                  08
+                </div>
+                <div>
+                  <span className="text-xs font-mono font-bold text-[#E4D1A5] block uppercase">FELLOWSHIP</span>
+                  <span className="text-sm font-bold text-[#FBFAF7] block">Fellowship in lumbar spine</span>
+                </div>
               </div>
             </div>
 
           </div>
-
         </div>
-
-        {/* ==========================================
-            INTERACTIVE GEOGRAPHIC MAP / TIMELINE VIEW
-        ========================================== */}
-        {viewMode === "map" ? (
-          <div className="sec2-map-panel relative w-full h-[460px] sm:h-[520px] lg:h-[560px] bg-[#071B2A] border border-[#163B56] rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-between">
-            
-            {/* Atmospheric Background Crossfading */}
-            {MILESTONES.map((m) => (
-              <div
-                key={`bg-img-${m.id}`}
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out pointer-events-none ${
-                  activeId === m.id ? "opacity-15 scale-100" : "opacity-0 scale-105"
-                }`}
-                style={{
-                  backgroundImage: `linear-gradient(to bottom, #071B2A 0%, rgba(7,27,42,0.4) 50%, #071B2A 100%), url(${m.bgImage})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  filter: "grayscale(80%) contrast(120%) blur(1px)",
-                }}
-              />
-            ))}
-
-            {/* Removed Grid and Topographic Outlines as per request */}
-
-            {/* Map Header HUD removed as per request */}
-
-            {/* SVG ROUTE & MILESTONE NODES (Evenly Distributed Across Canvas) */}
-            <div className="relative w-full flex-1 min-h-[320px]">
-              
-              {/* Dashed SVG Route using 01 (82,20) -> 02 (60,42) -> 03 (38,64) -> 04 (18,82) */}
-              <svg className="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="sec2RouteGrad" x1="100%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#C9A45C" stopOpacity="0.4" />
-                    <stop offset="50%" stopColor="#E4D1A5" stopOpacity="0.9" />
-                    <stop offset="100%" stopColor="#C9A45C" stopOpacity="0.8" />
-                  </linearGradient>
-                </defs>
-                
-                {/* Smooth Flowing Curve */}
-                <path
-                  ref={routePathRef}
-                  d="M 82 20 C 72 30, 68 36, 60 42 C 52 48, 46 56, 38 64 C 30 72, 24 78, 18 82"
-                  fill="none"
-                  stroke="url(#sec2RouteGrad)"
-                  strokeWidth="0.8"
-                  strokeDasharray="2 2"
-                  strokeLinecap="round"
-                />
-              </svg>
-
-              {/* Pulsing Travel Indicator */}
-              <div 
-                className="absolute z-20 w-3.5 h-3.5 bg-[#C9A45C] rounded-full shadow-[0_0_20px_#C9A45C] transition-all duration-700 ease-out -translate-x-1/2 -translate-y-1/2"
-                style={{ top: activeMilestone.mapPos.top, left: activeMilestone.mapPos.left }}
-              >
-                <div className="absolute inset-0 rounded-full bg-[#C9A45C] animate-ping opacity-75" />
-              </div>
-
-              {/* Four Evenly Distributed Milestones (01 -> 02 -> 03 -> 04) */}
-              {MILESTONES.map((m) => {
-                const isActive = activeId === m.id;
-                return (
-                  <div
-                    key={m.id}
-                    onClick={() => setActiveId(m.id)}
-                    style={{ top: m.mapPos.top, left: m.mapPos.left }}
-                    className="sec2-milestone-marker absolute z-30 -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
-                  >
-                    <div className="relative flex flex-col items-center">
-                      
-                      {/* Node Circle */}
-                      <div 
-                        className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-500 border ${
-                          isActive 
-                            ? "bg-[#FBFAF7] border-[#C9A45C] scale-115 shadow-[0_0_25px_rgba(201,164,92,0.5)]" 
-                            : "bg-[#071B2A] border-[#C9A45C]/40 hover:border-[#C9A45C] hover:scale-105"
-                        }`}
-                      >
-                        <span className={`font-mono text-xs sm:text-sm font-bold ${
-                          isActive ? "text-[#071B2A]" : "text-[#E4D1A5]"
-                        }`}>
-                          {m.id}
-                        </span>
-                      </div>
-
-                      {/* City & Institution Hover Label */}
-                      <div className={`absolute top-14 whitespace-nowrap px-3 py-1 rounded bg-[#071B2A]/90 border border-[#163B56] backdrop-blur-md transition-all duration-300 pointer-events-none ${
-                        isActive ? "opacity-100 y-0" : "opacity-0 y-2 group-hover:opacity-100 group-hover:y-0"
-                      }`}>
-                        <p className="text-[10px] font-mono text-[#C9A45C] font-semibold tracking-wider uppercase">
-                          {m.institution}
-                        </p>
-                        <p className="text-[11px] text-[#FBFAF7] font-medium">{m.degree}</p>
-                      </div>
-
-                    </div>
-                  </div>
-                );
-              })}
-
-            </div>
-
-            
-            
-
-          </div>
-        ) : (
-          /* ==========================================
-              TIMELINE ALTERNATIVE VIEW
-          ========================================== */
-          <div className="w-full py-6">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
-              <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-[#163B56] -translate-y-1/2 z-0" />
-
-              {MILESTONES.map((m) => {
-                const isActive = activeId === m.id;
-                return (
-                  <div 
-                    key={m.id}
-                    onClick={() => setActiveId(m.id)}
-                    className={`relative z-10 p-6 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
-                      isActive 
-                        ? "bg-[#FBFAF7] text-[#071B2A] border-[#C9A45C] shadow-2xl scale-105" 
-                        : "bg-[#071B2A] text-[#F5F7F6] border-[#163B56] hover:border-[#C9A45C]/50"
-                    }`}
-                  >
-                    <div>
-                      <div className="flex justify-between items-center mb-4">
-                        <span className={`text-xs font-mono font-bold ${
-                          isActive ? "text-[#C9A45C]" : "text-[#E4D1A5]"
-                        }`}>
-                          {m.id}
-                        </span>
-                        <span className="text-[10px] font-mono opacity-60">
-                          {m.category}
-                        </span>
-                      </div>
-                      <h4 className="text-base font-bold leading-snug mb-2 font-grotesk">{m.degree}</h4>
-                      <p className={`text-xs font-medium mb-1 ${isActive ? "text-[#163B56]" : "text-[#456982]"}`}>
-                        {m.institution}
-                      </p>
-                      <p className={`text-[11px] ${isActive ? "text-[#456982]" : "text-[#456982]/80"}`}>
-                        {m.location}
-                      </p>
-                    </div>
-
-                    <div className="mt-6 pt-4 border-t border-current/10 flex items-center justify-between text-[11px] font-mono">
-                      <span>INSPECT</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
-
-
-
+      </div>
       </div>
     </section>
   );

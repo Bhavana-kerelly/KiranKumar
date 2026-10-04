@@ -7,7 +7,7 @@ export function HeroDoctor({ mousePosition }) {
   const docY = -mousePosition.y * 8;
 
   return (
-    <div className="absolute inset-0 flex items-end justify-center pointer-events-none select-none z-20 overflow-visible">
+    <div className="absolute inset-0 flex items-end justify-center md:justify-end pointer-events-none select-none z-20 overflow-visible">
       
       {/* Doctor Cutout Container */}
       <motion.div

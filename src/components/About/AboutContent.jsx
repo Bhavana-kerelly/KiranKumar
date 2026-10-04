@@ -88,10 +88,10 @@ export const ExperienceHighlight = () => (
       <div className="absolute right-0 top-0 w-64 h-64 bg-[#E7C68E]/5 rounded-full blur-3xl pointer-events-none translate-x-1/2 -translate-y-1/2" />
       
       <h2 className="text-sm font-sans font-bold text-[#E7C68E] uppercase tracking-[0.2em] mb-4">Surgical Experience</h2>
-      <div className="text-6xl md:text-7xl lg:text-8xl font-serif font-black text-[#FFFFFF] mb-8">500<span className="text-[#E7C68E]">+</span></div>
+      <div className="text-6xl md:text-7xl lg:text-8xl font-serif font-black text-[#FFFFFF] mb-8">1000<span className="text-[#E7C68E]">+</span></div>
       
       <p className="text-[17px] leading-[1.8] font-sans text-[#F7F5F0]/80 font-light">
-        Throughout his professional journey, Dr. Kiran Kumar Karumuru has participated in and performed more than 500 knee replacement surgeries, acquiring extensive expertise in primary and complex joint reconstruction procedures.
+        Throughout his professional journey, Dr. Kiran Kumar Karumuru has participated in and performed more than 1000 knee replacement surgeries, acquiring extensive expertise in primary and complex joint reconstruction procedures.
       </p>
     </div>
 
@@ -105,9 +105,9 @@ export const ExpertiseCard = () => (
     <div className="space-y-2">
       {[
         { num: '01', title: 'Robotic Joint Replacement', desc: 'Precision-driven procedures utilizing advanced robotic assistance for optimal implant placement.' },
-        { num: '02', title: 'Arthroscopy', desc: 'Minimally invasive keyhole surgeries for joint inspection, diagnosis, and treatment.' },
-        { num: '03', title: 'Complex Trauma Management', desc: 'Expert care for severe fractures and multi-trauma musculoskeletal injuries.' },
-        { num: '04', title: 'Joint Reconstruction', desc: 'Comprehensive restoration of joint function through customized surgical interventions.' }
+        { num: '02', title: 'Hip Replacement', desc: 'Comprehensive restoration and customized surgical interventions for hip disorders.' },
+        { num: '03', title: 'Arthroscopy', desc: 'Minimally invasive keyhole surgeries for joint inspection, diagnosis, and treatment.' },
+        { num: '04', title: 'Complex Trauma Management', desc: 'Expert care for severe fractures and multi-trauma musculoskeletal injuries.' }
       ].map((item, i, arr) => (
         <div key={item.num} className="group relative">
           <div className="grid grid-cols-[60px_1fr] md:grid-cols-[100px_1fr] items-start p-6 rounded-2xl hover:bg-[#F7F5F0]/80 transition-colors duration-300 cursor-default -mx-6">

@@ -244,7 +244,7 @@ export function FinalCTASection({ mousePosition = { x: 0, y: 0 } }) {
         <div className="mt-16 sm:mt-20 pt-6 border-t border-[#163B56]/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 fcta-sub-item">
           <div className="flex items-center gap-2 text-[10px] font-mono text-[#C9A45C] tracking-wider">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C9A45C]" />
-            <span>500+ KNEE REPLACEMENT SURGERIES</span>
+            <span>1000+ KNEE REPLACEMENT SURGERIES</span>
           </div>
         </div>
 

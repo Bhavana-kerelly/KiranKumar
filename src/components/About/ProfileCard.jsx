@@ -53,7 +53,7 @@ export function ProfileCard() {
           </div>
           <div className="grid grid-cols-[110px_1fr] gap-4 items-start">
             <span className="text-xs font-sans text-[#315F86]/70 uppercase tracking-widest font-semibold mt-0.5">Qualification</span>
-            <span className="text-sm font-sans font-medium text-[#10283B] leading-snug">MBBS, MS Orthopaedics</span>
+            <span className="text-sm font-sans font-medium text-[#10283B] leading-snug">Mbbs,MS ortho,FIJR,FIPM(kolkata),FISS (Ganga hospital ,Coimbatore)</span>
           </div>
           <div className="grid grid-cols-[110px_1fr] gap-4 items-start">
             <span className="text-xs font-sans text-[#315F86]/70 uppercase tracking-widest font-semibold mt-0.5">Fellowship</span>
@@ -65,7 +65,7 @@ export function ProfileCard() {
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-[#F7F5F0] rounded-2xl p-5 flex flex-col items-center justify-center text-center relative overflow-hidden group">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full border border-[#E7C68E]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 scale-150 group-hover:scale-100" />
-            <span className="text-2xl font-serif font-black text-[#E7C68E] mb-1 relative z-10">500+</span>
+            <span className="text-2xl font-serif font-black text-[#E7C68E] mb-1 relative z-10">1000+</span>
             <span className="text-[10px] font-sans font-bold text-[#193852]/80 uppercase tracking-widest leading-tight relative z-10">
               Knee Replacement<br/>Surgeries
             </span>

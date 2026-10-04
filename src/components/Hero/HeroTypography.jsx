@@ -116,15 +116,44 @@ export function HeroTypography({ mousePosition }) {
               ORTHOPAEDIC SURGEON
             </span>
           </div>
-          <p className="text-[10px] sm:text-[11px] font-semibold tracking-wider text-slate-blue/90 uppercase pl-7">
-            Robotic Joint Replacement &nbsp;•&nbsp; Arthroscopy &nbsp;•&nbsp; Complex Trauma Management
-          </p>
+
+          {/* NEW PREMIUM EXPERTISE VISUALS GRID */}
+          <div className="mt-12 sm:mt-16 lg:mt-20 flex items-center gap-5 sm:gap-8 md:gap-12 pointer-events-auto">
+            {[
+              { title: "ROBOTIC JOINT\nREPLACEMENT", img: "/assets/robotic-joint-replacement.jpg" },
+              { title: "HIP\nREPLACEMENT", img: "/assets/hip-replacement.jpg" },
+              { title: "ARTHROSCOPY", img: "/assets/arthroscopy.jpg" },
+              { title: "COMPLEX\nTRAUMA", img: "/assets/complex-trauma.jpg" }
+            ].map((item, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                {/* Clean Circular Image Container */}
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full bg-white/80 backdrop-blur-sm border border-white flex items-center justify-center p-1 sm:p-2 group hover:-translate-y-1 transition-transform duration-500 shadow-sm">
+                  
+                  {/* Image (With Fallback) */}
+                  <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                    <img 
+                      src={item.img} 
+                      alt={item.title.replace('\n', ' ')}
+                      className="w-full h-full object-cover filter saturate-[0.85] group-hover:saturate-110 transition-all duration-500 scale-105 group-hover:scale-100"
+                      onError={(e) => {
+                        e.target.onerror = null; 
+                        e.target.src = "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=200&h=200&fit=crop"; 
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Title (Decreased Size) */}
+                <span className="text-[7px] sm:text-[8px] md:text-[9px] font-extrabold tracking-[0.1em] sm:tracking-[0.15em] text-navy-dark uppercase text-center font-grotesk mt-3 sm:mt-4 whitespace-pre-line leading-snug h-6 flex items-center justify-center">
+                  {item.title}
+                </span>
+              </div>
+            ))}
+          </div>
+
         </motion.div>
 
-        {/* WATERMARK BACKGROUND TEXT: KIRAN (Faint large watermark behind doctor) */}
-        <div className="absolute top-[48%] left-1/2 -translate-x-1/2 w-full text-center font-display font-black text-[clamp(8rem,24vw,26rem)] text-navy-primary/[0.05] tracking-tighter pointer-events-none -z-10 uppercase leading-none">
-          KIRAN
-        </div>
+
 
       </div>
     </motion.div>

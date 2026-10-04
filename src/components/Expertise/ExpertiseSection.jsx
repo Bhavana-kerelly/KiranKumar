@@ -22,7 +22,7 @@ const SPECIALTIES = [
     description:
       "Advanced joint replacement care supported by robotic technology, surgical precision and individualized treatment planning.",
     isPrimary: true,
-    statNumber: "500+",
+    statNumber: "1000+",
     statLabel: "Knee Replacement Surgeries",
     statContext:
       "Verified clinical surgical experience in computer-navigated and robotic-assisted total and partial knee arthroplasty.",
@@ -54,7 +54,45 @@ const SPECIALTIES = [
   },
   {
     id: "02",
-    chapter: "Chapter 02 / Minimally Invasive",
+    chapter: "Chapter 02 / Advanced Surgery",
+    title: "Hip Replacement",
+    subtitle: "Precise Restoration of Joint Mechanics",
+    description:
+      "Advanced hip replacement surgery utilizing state-of-the-art techniques to restore mobility and alleviate pain with long-lasting results.",
+    isPrimary: false,
+    statNumber: "500+",
+    statLabel: "Hip Replacement Surgeries",
+    statContext:
+      "Extensive clinical experience in primary and revision total hip arthroplasty.",
+    videoUrl: "/videos/hip-replacement.mp4",
+    posterImage:
+      "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1600",
+    techBadge: "Advanced Implants & Kinematics",
+    principles: [
+      "Surgical Precision",
+      "Advanced Technology",
+      "Personalized Planning",
+      "Early Rehabilitation",
+    ],
+    clinicalFocus: [
+      {
+        name: "Anatomical Restoration",
+        note: "Precise cup positioning and leg length restoration",
+      },
+      {
+        name: "Tissue Preserving",
+        note: "Minimally invasive approaches for faster recovery",
+      },
+      {
+        name: "Durable Materials",
+        note: "Use of advanced bearing surfaces for longevity",
+      },
+    ],
+    ctaText: "Consult Hip Replacement Specialist",
+  },
+  {
+    id: "03",
+    chapter: "Chapter 03 / Minimally Invasive",
     title: "Arthroscopy",
     subtitle: "Targeted Keyhole Joint Preservation",
     description:
@@ -91,8 +129,8 @@ const SPECIALTIES = [
     ctaText: "Consult Arthroscopy Specialist",
   },
   {
-    id: "03",
-    chapter: "Chapter 03 / Reconstruction",
+    id: "04",
+    chapter: "Chapter 04 / Reconstruction",
     title: "Complex Trauma Management",
     subtitle: "Structural Reconstruction & Axis Restoration",
     description:

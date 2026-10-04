@@ -49,7 +49,7 @@ export function HeroMeta({ mousePosition }) {
         <div className="glass-card rounded-2xl p-4 sm:p-5 min-w-[210px] shadow-floating border-r-4 border-r-gold-primary border-t border-l border-b border-navy-primary/10 relative overflow-hidden group hover:border-gold-primary/50 transition-all duration-300">
           <div className="flex items-baseline gap-1.5">
             <span className="text-3xl sm:text-4xl font-extrabold font-display tracking-tight text-navy-dark">
-              500+
+              1000+
             </span>
             <Activity className="w-4 h-4 text-gold-dark stroke-[2.5]" />
           </div>

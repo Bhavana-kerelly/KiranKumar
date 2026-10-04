@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowUpRight, Award, MapPin, Calendar, CheckCircle2, Sparkles } from 'lucide-react';
-import { FaYoutube, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaYoutube, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { KneeAnatomyGraphic } from '../graphics/KneeAnatomyGraphic';
 
@@ -30,8 +30,8 @@ export function FooterSection({ onOpenAppointment }) {
   const navigate = useNavigate();
 
   const handleNavClick = (e, link) => {
+    e.preventDefault();
     if (link.href.includes('#')) {
-      e.preventDefault();
       const targetId = link.href.split('#')[1];
       if (location.pathname === '/') {
         document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
@@ -39,12 +39,14 @@ export function FooterSection({ onOpenAppointment }) {
         navigate('/', { state: { scrollTo: targetId } });
       }
     } else if (link.href === '/') {
-      e.preventDefault();
       if (location.pathname === '/') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         navigate('/');
       }
+    } else {
+      navigate(link.href);
+      window.scrollTo(0, 0);
     }
   };
 
@@ -231,7 +233,7 @@ export function FooterSection({ onOpenAppointment }) {
 
             <div className="footer-fade-item mt-8 p-4 rounded-xl bg-slate-50/80 backdrop-blur-sm border border-slate-200/80 hover:border-[#D4AF37]/50 hover:bg-white hover:shadow-lg hover:shadow-[#D4AF37]/10 transition-all duration-300 flex items-center gap-5 w-fit">
               <div className="flex items-baseline">
-                <span className="text-3xl font-grotesk font-black text-[#0A2540] tracking-tight">500</span>
+                <span className="text-3xl font-grotesk font-black text-[#0A2540] tracking-tight">1000</span>
                 <span className="text-2xl font-grotesk font-black text-[#D4AF37]">+</span>
               </div>
               <div className="border-l border-slate-200 pl-4">
@@ -266,7 +268,7 @@ export function FooterSection({ onOpenAppointment }) {
             {[
               { icon: FaYoutube, label: 'YouTube', color: '#FF0000' },
               { icon: FaFacebook, label: 'Facebook', color: '#1877F2' },
-              { icon: FaTwitter, label: 'Twitter', color: '#1DA1F2' },
+              { icon: FaInstagram, label: 'Instagram', color: '#E1306C' },
               { icon: FaLinkedin, label: 'LinkedIn', color: '#0A66C2' }
             ].map((social) => {
               const Icon = social.icon;

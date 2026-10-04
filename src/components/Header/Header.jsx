@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
-import { FaYoutube, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaYoutube, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 export function Header({ onOpenAppointment }) {
@@ -20,27 +20,28 @@ export function Header({ onOpenAppointment }) {
   const socialLinks = [
     { icon: FaYoutube, href: '#', label: 'YouTube', color: '#FF0000' },
     { icon: FaFacebook, href: '#', label: 'Facebook', color: '#1877F2' },
-    { icon: FaTwitter, href: '#', label: 'Twitter', color: '#1DA1F2' },
+    { icon: FaInstagram, href: '#', label: 'Instagram', color: '#E1306C' },
     { icon: FaLinkedin, href: '#', label: 'LinkedIn', color: '#0A66C2' },
   ];
 
   const handleNavClick = (e, link) => {
+    e.preventDefault();
     if (link.href.includes('#')) {
-      e.preventDefault();
       const targetId = link.href.split('#')[1];
       if (location.pathname === '/') {
         document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
       } else {
-        // Navigate to home and pass state to scroll
         navigate('/', { state: { scrollTo: targetId } });
       }
     } else if (link.href === '/') {
-      e.preventDefault();
       if (location.pathname === '/') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         navigate('/');
       }
+    } else {
+      navigate(link.href);
+      window.scrollTo(0, 0);
     }
   };
 
