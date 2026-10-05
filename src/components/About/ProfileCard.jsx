@@ -53,7 +53,7 @@ export function ProfileCard() {
           </div>
           <div className="grid grid-cols-[110px_1fr] gap-4 items-start">
             <span className="text-xs font-sans text-[#315F86]/70 uppercase tracking-widest font-semibold mt-0.5">Qualification</span>
-            <span className="text-sm font-sans font-medium text-[#10283B] leading-snug">Mbbs,MS ortho,FIJR,FIPM(kolkata),FISS (Ganga hospital ,Coimbatore)</span>
+            <span className="text-sm font-sans font-medium text-[#10283B] leading-snug">Mbbs,MS ortho,FIJR,FIPM(kolkata),vFISS (Ganga hospital ,Coimbatore)</span>
           </div>
           <div className="grid grid-cols-[110px_1fr] gap-4 items-start">
             <span className="text-xs font-sans text-[#315F86]/70 uppercase tracking-widest font-semibold mt-0.5">Fellowship</span>

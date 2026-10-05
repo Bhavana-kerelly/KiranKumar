@@ -136,8 +136,8 @@ const SPECIALTIES = [
     description:
       "Comprehensive orthopaedic management for complex injuries, with emphasis on surgical planning, precision and recovery.",
     isPrimary: false,
-    statNumber: "24/7",
-    statLabel: "Emergency Care Protocol",
+    statNumber: "5000+",
+    statLabel: "Complex Trauma Cases",
     statContext:
       "Systematic surgical fixation protocols for high-energy fractures and severe musculoskeletal trauma.",
     videoUrl: "/videos/complex-trauma-management.mp4",

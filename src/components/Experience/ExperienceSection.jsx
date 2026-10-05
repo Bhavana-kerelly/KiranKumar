@@ -314,7 +314,7 @@ export function ExperienceSection({ mousePosition = { x: 0, y: 0 } }) {
 
               {/* Qualifications Pill */}
               <div className="mt-3 inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#C9A45C]/15 border border-[#C9A45C]/40 text-[#E4D1A5] text-[11px] font-grotesk font-bold">
-                <span>Mbbs,MS ortho,FIJR,FIPM,FISS</span>
+                <span>Mbbs,MS ortho,FIJR,FIPM,vFISS</span>
               </div>
             </div>
 
@@ -399,7 +399,7 @@ export function ExperienceSection({ mousePosition = { x: 0, y: 0 } }) {
                 </div>
                 <div>
                   <span className="text-xs font-mono font-bold text-[#E4D1A5] block uppercase">QUALIFICATION</span>
-                  <span className="text-sm font-bold text-[#FBFAF7] block">FISS (Ganga hospital ,Coimbatore)</span>
+                  <span className="text-sm font-bold text-[#FBFAF7] block">vFISS (Ganga hospital ,Coimbatore)</span>
                 </div>
               </div>
 

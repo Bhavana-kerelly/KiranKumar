@@ -17,7 +17,7 @@ const ACHIEVEMENTS = [
     img: "/assets/arthroscopy.jpg"
   },
   {
-    value: "2000+",
+    value: "5000+",
     label: "COMPLEX TRAUMA",
     img: "/assets/complex-trauma.jpg"
   }
